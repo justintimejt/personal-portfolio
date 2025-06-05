@@ -56,10 +56,10 @@ export default function Home() {
       <footer>
         <div className="flex justify-between w-full">
           <div className="flex gap-6">
-            <Link href="https://github.com/justin-chow"><FaGithub className="w-5 h-5" /></Link>
-            <Link href="https://www.linkedin.com/in/justin-chow-0000000000/"><FaLinkedin className="w-5 h-5" /></Link>
-            <Link href="https://www.instagram.com/justin.chow/"><FaTwitter className="w-5 h-5" /></Link>
-            <Link href="mailto:your.email@example.com"><FaEnvelope className="w-5 h-5" /></Link>
+            <Link href="https://github.com/justintimejt"><FaGithub className="w-5 h-5" /></Link>
+            <Link href="https://www.linkedin.com/in/justin-chow-a74a972b5/"><FaLinkedin className="w-5 h-5" /></Link>
+            <Link href="https://x.com/justinpchow"><FaTwitter className="w-5 h-5" /></Link>
+            <Link href="mailto:jchow267@uwo.ca"><FaEnvelope className="w-5 h-5" /></Link>
           </div>
           <div className="text-sm text-gray-500">
             <p>© 2025 Justin Chow</p>
