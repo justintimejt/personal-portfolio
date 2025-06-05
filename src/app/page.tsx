@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <nav className="flex justify-between w-full">
+      <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
           <Link href="/">Justin Chow</Link>
         </div>
@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex-1">
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-xl font-semibold">&lt; about &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>SWE intern @ <Link href="https://acto.com">ACTO</Link>
               <Link href="https://acto.com" target="_blank">
@@ -29,7 +29,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-xl font-semibold">&lt; what I've been working on recently &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; what I've been working on recently &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>deployed a AI web app that generates LaTeX resumes</li>
               <li>solving leetcode problems</li>
@@ -38,7 +38,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-xl font-semibold">&lt; featured &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; featured &gt;</h1>
             <div className="flex justify-center pt-4">
               <Link href="https://crackdresume.vercel.app/" target="_blank">
                 <Image 
