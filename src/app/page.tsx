@@ -58,7 +58,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-lg font-semibold">&lt; what I've been working on recently &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>deployed a AI web app that generates LaTeX resumes</li>
               <li>solving leetcode problems</li>
