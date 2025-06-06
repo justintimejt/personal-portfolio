@@ -83,15 +83,15 @@ export default function Projects() {
     },
     {
       title: "Fund Homecare Canada Website",
-      description: "Computer vision model detecting vacant spots",
+      description: "Designed and integrated front-end for website",
       image: "/images/fhc.png",
       repoLink: "https://github.com/Fund-Homecare-Canada-Website-Redesign/FHC-webredesign",
       appLink: "https://fhc-webredesign.vercel.app/",
       technologies: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS','Vercel']
     },
     {
-      title: "Task Manager",
-      description: "Computer vision model detecting vacant spots",
+      title: "To Do List",
+      description: "Drag and drop to do list - manage your tasks",
       image: "/images/todolist.png",
       repoLink: "https://github.com/justintimejt/DoToListApp",
       technologies: ['Typescript', 'Vite', 'Tailwind CSS']
