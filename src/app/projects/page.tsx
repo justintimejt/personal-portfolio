@@ -10,13 +10,13 @@ interface ProjectCardProps {
   description: string;
   image: string;
   repoLink: string;
-  appLink: string;
+  appLink?: string;
   technologies: string[];
 }
 
 function ProjectCard({ title, description, image, repoLink, appLink, technologies }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all">
+    <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-black shadow-md hover:shadow-lg transition-all">
       <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
           <div>
@@ -27,9 +27,11 @@ function ProjectCard({ title, description, image, repoLink, appLink, technologie
             <Link href={repoLink} target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
               <FaGithub className="w-5 h-5" />
             </Link>
-            <Link href={appLink} target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
-              <FaExternalLinkAlt className="w-5 h-5" />
-            </Link>
+            {appLink && (
+              <Link href={appLink} target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+                <FaExternalLinkAlt className="w-5 h-5" />
+              </Link>
+            )}
           </div>
         </div>
         <div className="relative overflow-hidden rounded-lg">
@@ -65,42 +67,39 @@ export default function Projects() {
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini', 'Vercel']
     },
     {
-        title: "Feeltr",
-        description: "Search engine verifying website content",
-        image: "/images/feeltr.png",
-        repoLink: "https://github.com/carolwangg/uofthacks2024",
-        appLink: "https://feeltr.onrender.com/static/index.html",
-        technologies: ['Python', 'Javascript','Flask', 'CSS','HTML','Google API', 'BeautifulSoup 4', 'Textblob', 'Render']
+      title: "Feeltr",
+      description: "Search engine verifying website content",
+      image: "/images/feeltr.png",
+      repoLink: "https://github.com/carolwangg/uofthacks2024",
+      appLink: "https://feeltr.onrender.com/static/index.html",
+      technologies: ['Python', 'Javascript','Flask', 'CSS','HTML','Google API', 'BeautifulSoup 4', 'Textblob', 'Render']
     },
     {
-        title: "Parking Spotter",
-        description: "Computer vision model detecting vacant spots",
-        image: "/images/parkingspotter.png",
-        repoLink: "https://crackdresume.vercel.app/",
-        appLink: "/projects",
-        technologies: ['Typescript', 'Python','Flask', 'OpenCV' ,'NumPy', 'React.js','HTML']
+      title: "Parking Spotter",
+      description: "Computer vision model detecting vacant spots",
+      image: "/images/parkingspotter.png",
+      repoLink: "https://crackdresume.vercel.app/",
+      technologies: ['Typescript', 'Python','Flask', 'OpenCV' ,'NumPy', 'React.js','HTML']
     },
     {
-        title: "Fund Homecare Canada Website",
-        description: "Computer vision model detecting vacant spots",
-        image: "/images/fhc.png",
-        repoLink: "https://github.com/Fund-Homecare-Canada-Website-Redesign/FHC-webredesign",
-        appLink: "https://fhc-webredesign.vercel.app/",
-        technologies: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS','Vercel']
+      title: "Fund Homecare Canada Website",
+      description: "Computer vision model detecting vacant spots",
+      image: "/images/fhc.png",
+      repoLink: "https://github.com/Fund-Homecare-Canada-Website-Redesign/FHC-webredesign",
+      appLink: "https://fhc-webredesign.vercel.app/",
+      technologies: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS','Vercel']
     },
     {
-        title: "Task Manager",
-        description: "Computer vision model detecting vacant spots",
-        image: "/images/todolist.png",
-        repoLink: "https://github.com/justintimejt/DoToListApp",
-        appLink: "/projects",
-        technologies: ['Typescript', 'Vite', 'Tailwind CSS']
+      title: "Task Manager",
+      description: "Computer vision model detecting vacant spots",
+      image: "/images/todolist.png",
+      repoLink: "https://github.com/justintimejt/DoToListApp",
+      technologies: ['Typescript', 'Vite', 'Tailwind CSS']
     },
-    // Add more projects here
   ];
 
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white">
       <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
           <Link href="/">Justin Chow</Link>
