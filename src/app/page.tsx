@@ -16,7 +16,6 @@ export default function Home() {
         </div>
         <div className="flex gap-6 items-center">
           <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
