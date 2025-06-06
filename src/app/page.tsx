@@ -1,17 +1,33 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMoon, FaSun } from "react-icons/fa";
+import { useTheme } from "./context/ThemeContext";
 
 export default function Home() {
+  const { theme, toggleTheme } = useTheme();
+  
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white">
       <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
           <Link href="/">Justin Chow</Link>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 items-center">
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact</Link>
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {theme === 'dark' ? (
+              <FaSun className="w-5 h-5 text-white" />
+            ) : (
+              <FaMoon className="w-5 h-5 text-gray-600" />
+            )}
+          </button>
         </div>
       </nav>
       <main className="flex-1">
@@ -56,12 +72,12 @@ export default function Home() {
       <footer>
         <div className="flex justify-between w-full">
           <div className="flex gap-6">
-            <Link href="https://github.com/justintimejt"><FaGithub className="w-5 h-5" /></Link>
-            <Link href="https://www.linkedin.com/in/justin-chow-a74a972b5/"><FaLinkedin className="w-5 h-5" /></Link>
-            <Link href="https://x.com/justinpchow"><FaTwitter className="w-5 h-5" /></Link>
-            <Link href="mailto:jchow267@uwo.ca"><FaEnvelope className="w-5 h-5" /></Link>
+            <Link href="https://github.com/justintimejt" target="_blank"><FaGithub className="w-5 h-5" /></Link>
+            <Link href="https://www.linkedin.com/in/justin-chow-a74a972b5/" target="_blank"><FaLinkedin className="w-5 h-5" /></Link>
+            <Link href="https://x.com/justinpchow" target="_blank"><FaTwitter className="w-5 h-5" /></Link>
+            <Link href="mailto:jchow267@uwo.ca" target="_blank"><FaEnvelope className="w-5 h-5" /></Link>
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-500 dark:text-gray-400">
             <p>© 2025 Justin Chow</p>
           </div>
         </div>
