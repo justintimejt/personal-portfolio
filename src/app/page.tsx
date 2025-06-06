@@ -23,7 +23,7 @@ export default function Home() {
             aria-label="Toggle dark mode"
           >
             {theme === 'dark' ? (
-              <FaSun className="w-5 h-5 text-white" />
+              <FaSun className="w-5 h-5 text-gray-500" />
             ) : (
               <FaMoon className="w-5 h-5 text-gray-600" />
             )}
@@ -35,12 +35,23 @@ export default function Home() {
           <div className="space-y-4">
             <h1 className="text-lg font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
-              <li>SWE intern @ <Link href="https://acto.com">ACTO</Link>
-              <Link href="https://acto.com" target="_blank">
-                <Image src="/images/acto.png" alt="ACTO logo" width={20} height={20} className="inline ml-1" />
-              </Link> (summer 2025)
+              <li>SWE intern @ 
+                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Link href="https://acto.com" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
+                  <Link href="https://acto.com" target="_blank" className="ml-1">
+                    <Image src="/images/acto.png" alt="ACTO logo" width={20} height={20} className="inline" />
+                  </Link>
+                </div>
+                (summer 2025)
               </li>
-              <li>Computer Science student at Western University</li>
+              <li>Computer Science student at 
+                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Link href="https://www.uwo.ca/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">Western University</Link>
+                  <Link href="https://www.uwo.ca/" target="_blank" className="ml-1">
+                    <Image src="/images/westernlogo.png" alt="Western logo" width={20} height={20} className="inline" />
+                  </Link>
+                </div>
+              </li>
               <li>prev: front-end engineer @ Tech for Social Impact (spring 2025)</li>
             </ul>
           </div>
