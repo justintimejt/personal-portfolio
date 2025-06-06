@@ -35,11 +35,14 @@ export default function Home() {
             <h1 className="text-lg font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>SWE intern @ 
-                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                {/* <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
                   <Link href="https://acto.com" target="_blank" className="ml-1">
                     <Image src="/images/acto.png" alt="ACTO logo" width={20} height={20} className="inline" />
                   </Link>
+                </div> */}
+                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Link href="/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">Stealth Startup</Link>
                 </div>
                 (summer 2025)
               </li>
