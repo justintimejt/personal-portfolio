@@ -13,40 +13,38 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, description, image, repoLink, appLink, technologies }: ProjectCardProps) {
   return (
-    <div className="space-y-3">
-      <div className="flex justify-center pt-4">
-        <div className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all hover:shadow-lg">
+    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition-all">
+      <div className="p-6 space-y-4">
+        <div className="flex justify-between items-start">
+          <div>
+            <h3 className="text-xl font-semibold">{title}</h3>
+            <p className="text-gray-600 mt-1">{description}</p>
+          </div>
+          <div className="flex gap-3">
+            <Link href={repoLink} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <FaGithub className="w-5 h-5" />
+            </Link>
+            <Link href={appLink} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <FaExternalLinkAlt className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+        <div className="relative overflow-hidden rounded-lg">
           <Image 
             src={image}
             alt={`${title} screenshot`}
             width={500} 
             height={300}
-            className="rounded-lg transition-transform group-hover:scale-105"
+            className="w-full h-auto transition-transform hover:scale-105"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-            <div className="flex justify-between items-center">
-              <div>
-                <h3 className="text-lg font-semibold text-white">{title}</h3>
-                <p className="text-sm text-gray-200">{description}</p>
-              </div>
-              <div className="flex gap-3">
-                <Link href={repoLink} target="_blank" className="text-white hover:text-gray-300 transition-colors">
-                  <FaGithub className="w-5 h-5" />
-                </Link>
-                <Link href={appLink} target="_blank" className="text-white hover:text-gray-300 transition-colors">
-                  <FaExternalLinkAlt className="w-5 h-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div className="flex flex-wrap gap-2 pt-4">
-        {technologies.map((tech) => (
-          <span key={tech} className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600">
-            {tech}
-          </span>
-        ))}
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((tech) => (
+            <span key={tech} className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600">
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -58,9 +56,41 @@ export default function Projects() {
       title: "CrackdResume",
       description: "AI-powered LaTeX resume generator",
       image: "/images/crackdresume.png",
-      repoLink: "https://crackdresume.vercel.app/",
+      repoLink: "https://github.com/justintimejt/CrackdResume",
       appLink: "https://crackdresume.vercel.app/",
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI', 'Vercel']
+      technologies: ['Next.js', 'Node.js','TypeScript', 'Supabase','Tailwind CSS', 'Gemini', 'Vercel']
+    },
+    {
+        title: "Feeltr",
+        description: "Search engine verifying website content",
+        image: "/images/feeltr.png",
+        repoLink: "https://github.com/carolwangg/uofthacks2024",
+        appLink: "https://feeltr.onrender.com/static/index.html",
+        technologies: ['Python', 'Javascript','Flask', 'CSS','HTML','Google API', 'BeautifulSoup 4', 'Textblob', 'Render']
+    },
+    {
+        title: "Parking Spotter",
+        description: "Computer vision model detecting vacant spots",
+        image: "/images/parkingspotter.png",
+        repoLink: "https://crackdresume.vercel.app/",
+        appLink: "/projects",
+        technologies: ['Typescript', 'Python','Flask', 'OpenCV' ,'NumPy', 'React.js','HTML']
+    },
+    {
+        title: "Fund Homecare Canada Website",
+        description: "Computer vision model detecting vacant spots",
+        image: "/images/fhc.png",
+        repoLink: "https://github.com/Fund-Homecare-Canada-Website-Redesign/FHC-webredesign",
+        appLink: "https://fhc-webredesign.vercel.app/",
+        technologies: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS','Vercel']
+    },
+    {
+        title: "Task Manager",
+        description: "Computer vision model detecting vacant spots",
+        image: "/images/todolist.png",
+        repoLink: "https://github.com/justintimejt/DoToListApp",
+        appLink: "/projects",
+        technologies: ['Typescript', 'Vite', 'Tailwind CSS']
     },
     // Add more projects here
   ];
@@ -78,7 +108,6 @@ export default function Projects() {
       </nav>
       <main className="flex-1">
         <div className="space-y-6">
-          <h1 className="text-lg font-semibold">&lt; projects &gt;</h1>
           <div className="grid gap-8">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
