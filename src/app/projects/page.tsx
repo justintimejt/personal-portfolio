@@ -67,6 +67,13 @@ export default function Projects() {
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini', 'Vercel']
     },
     {
+      title: "TravelGenie AI",
+      description: "Plan and visualize your trip with AI",
+      image: "/images/TravelGenieAI.png",
+      repoLink: "https://github.com/jruttan1/TravelGenie",
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini', 'MapBox']
+    },
+    {
       title: "Feeltr",
       description: "Search engine verifying website content",
       image: "/images/feeltr.png",
