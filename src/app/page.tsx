@@ -64,7 +64,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-lg font-semibold">&lt; what I'm building currently &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; what I&apos;m building currently &gt;</h1>
             <div className="flex justify-center pt-4">
               <Link href="https://x.com/justinpchow/status/1984471220189069774/photo/1" target="_blank">
                 <Image 
