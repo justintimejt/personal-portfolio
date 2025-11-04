@@ -9,7 +9,7 @@ export default function Home() {
   const { theme, toggleTheme } = useTheme();
   
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
       <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
           <Link href="/">Justin Chow</Link>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="space-y-4">
             <h1 className="text-lg font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
-              <li>SWE intern @ 
+              <li>software engineer intern @ 
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
                   <Link href="https://acto.com/" target="_blank" className="ml-1">
@@ -51,25 +51,25 @@ export default function Home() {
                   </Link>
                 </div>
               </li>
-              <li>prev: front-end engineer @ Tech for Social Impact (spring 2025)</li>
+              <li>prev: software engineer intern @ UNITEC Engineering (summer 2024)</li>
             </ul>
           </div>
           <div className="space-y-3">
             <h1 className="text-lg font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2">
+              <li>building canvaschat, visualize your conversations with LLMS</li>
               <li>deployed a AI web app that generates LaTeX resumes</li>
               <li>solving leetcode problems</li>
               <li>trained a computer vision model to detect open parking spots</li>
-              <li>built an app that tracks information accuracy of websites</li>
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-lg font-semibold">&lt; featured &gt;</h1>
+            <h1 className="text-lg font-semibold">&lt; what I'm building currently &gt;</h1>
             <div className="flex justify-center pt-4">
-              <Link href="https://crackdresume.vercel.app/" target="_blank">
+              <Link href="https://x.com/justinpchow/status/1984471220189069774/photo/1" target="_blank">
                 <Image 
-                  src="/images/crackdresume.png" 
-                  alt="CrackdResume app screenshot" 
+                  src="/images/canvaschathome.jpeg" 
+                  alt="canvas chat hehe" 
                   width={500} 
                   height={300}
                   className="rounded-lg"
