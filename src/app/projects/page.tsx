@@ -59,6 +59,14 @@ export default function Projects() {
   const { theme, toggleTheme } = useTheme();
   const projects = [
     {
+      title: "Architech",
+      description: "Build and visual system architecture on a canvas",
+      image: "/images/architech.png",
+      repoLink: "https://github.com/justintimejt/Architech",
+      appLink: "https://www.aarchi.tech/",
+      technologies: ['FastAPI', 'TypeScript', 'PostgreSQL', 'React', 'Tailwind']
+    },
+    {
       title: "CrackdResume",
       description: "AI-powered LaTeX resume generator",
       image: "/images/crackdresume.png",
