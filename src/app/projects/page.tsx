@@ -59,6 +59,13 @@ export default function Projects() {
   const { theme, toggleTheme } = useTheme();
   const projects = [
     {
+      title: "RubyDraw",
+      description: "Build and visual system architecture on a canvas",
+      image: "/images/rubydraw.jpeg",
+      repoLink: "https://github.com/justintimejt/rubydraw",
+      technologies: ['Ruby on Rails', 'Redis', 'GraphQL', 'TypeScript', 'React', 'Google Cloud Platform']
+    },
+    {
       title: "Architech",
       description: "Build and visual system architecture on a canvas",
       image: "/images/architech.png",
