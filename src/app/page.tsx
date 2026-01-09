@@ -9,13 +9,13 @@ export default function Home() {
   const { theme, toggleTheme } = useTheme();
   
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
-      <nav className="flex justify-between w-full text-md">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
+      <nav className="flex justify-between w-full text-lg">
         <div className="flex gap-6">
-          <Link href="/">Justin Chow</Link>
+          <Link href="/" className="font-bold">Justin Chow</Link>
         </div>
         <div className="flex gap-6 items-center">
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects" className="font-bold">Projects</Link>
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -32,8 +32,8 @@ export default function Home() {
       <main className="flex-1">
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-lg font-semibold">&lt; about &gt;</h1>
-            <ul className="list-disc pl-6 mt-2 space-y-2">
+            <h1 className="text-xl font-semibold">&lt; about &gt;</h1>
+            <ul className="list-disc pl-6 mt-2 space-y-2 text-lg">
               <li>software engineer intern @ 
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
@@ -55,8 +55,8 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-lg font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
-            <ul className="list-disc pl-6 mt-2 space-y-2">
+            <h1 className="text-xl font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
+            <ul className="list-disc pl-6 mt-2 space-y-2 text-lg">
               <li>building canvaschat, visualize your conversations with LLMS</li>
               <li>deployed a AI web app that generates LaTeX resumes</li>
               <li>solving leetcode problems</li>
@@ -64,7 +64,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-lg font-semibold">&lt; what I&apos;m building currently &gt;</h1>
+            <h1 className="text-xl font-semibold">&lt; what I&apos;m building currently &gt;</h1>
             <div className="flex justify-center pt-4">
               <Link href="https://x.com/justinpchow/status/1984471220189069774/photo/1" target="_blank">
                 <Image 
@@ -87,7 +87,7 @@ export default function Home() {
             <Link href="https://x.com/justinpchow" target="_blank"><FaTwitter className="w-5 h-5" /></Link>
             <Link href="mailto:jchow267@uwo.ca" target="_blank"><FaEnvelope className="w-5 h-5" /></Link>
           </div>
-          <div className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="text-base text-gray-500 dark:text-gray-400">
             <p>© 2025 Justin Chow</p>
           </div>
         </div>

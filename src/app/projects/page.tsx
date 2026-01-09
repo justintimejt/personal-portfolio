@@ -121,13 +121,13 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
       <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
-          <Link href="/">Justin Chow</Link>
+          <Link href="/" className="font-bold">Justin Chow</Link>
         </div>
         <div className="flex gap-6 items-center">
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects" className="font-bold">Projects</Link>
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
