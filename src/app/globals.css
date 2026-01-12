@@ -36,3 +36,12 @@ body {
   background-image: radial-gradient(circle, #374151 1px, transparent 1px);
   background-size: 20px 20px;
 }
+
+.homepage-text {
+  font-family: var(--font-lora), "Lora Fallback", Georgia, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-variation-settings: "wght" 300;
+}

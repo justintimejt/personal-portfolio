@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
+import { EB_Garamond, Lora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { Analytics } from "@vercel/analytics/next";
 
 const ebGaramond = EB_Garamond({ subsets: ["latin"] });
+const lora = Lora({ 
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lora"
+});
 
 // In some dev environments Node starts with a stubbed global localStorage (no getItem).
 // Provide a minimal in-memory implementation to avoid runtime crashes during SSR.
@@ -43,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ebGaramond.className}>
+      <body className={`${ebGaramond.className} ${lora.variable}`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>

@@ -33,7 +33,7 @@ export default function Home() {
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="text-xl font-semibold">&lt; about &gt;</h1>
-            <ul className="list-disc pl-6 mt-2 space-y-2 text-lg">
+            <ul className="list-disc pl-6 mt-2 space-y-2 homepage-text">
               <li>software engineer intern @ 
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className="space-y-3">
             <h1 className="text-xl font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
-            <ul className="list-disc pl-6 mt-2 space-y-2 text-lg">
+            <ul className="list-disc pl-6 mt-2 space-y-2 homepage-text">
               <li>building canvaschat, visualize your conversations with LLMS</li>
               <li>deployed a AI web app that generates LaTeX resumes</li>
               <li>solving leetcode problems</li>
