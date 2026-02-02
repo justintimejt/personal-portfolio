@@ -57,10 +57,12 @@ export default function Home() {
           <div className="space-y-3">
             <h1 className="text-xl font-semibold">&lt; what I&apos;ve been working on recently &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2 homepage-text">
-              <li>building canvaschat, visualize your conversations with LLMS</li>
-              <li>deployed a AI web app that generates LaTeX resumes</li>
-              <li>solving leetcode problems</li>
+              <li>building RubyDraw, turn a sketch into a 3D animation</li>
+              <li>deployed   
+                <Link href="https://www.aarchi.tech/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300 underline"> Architech</Link>
+              , a system architecture visualization tool </li>
               <li>trained a computer vision model to detect open parking spots</li>
+              <li>solving leetcode problems</li>
             </ul>
           </div>
           <div className="space-y-3">
