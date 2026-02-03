@@ -39,6 +39,9 @@ if (
 export const metadata: Metadata = {
   title: "Justin Chow",
   description: "Personal website of Justin Chow",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
