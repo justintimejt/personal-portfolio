@@ -9,7 +9,7 @@ export default function Home() {
   const { theme, toggleTheme } = useTheme();
   
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white">
       <nav className="flex justify-between w-full text-lg">
         <div className="flex gap-6">
           <Link href="/" className="font-bold">Justin Chow</Link>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="space-y-4">
             <h1 className="text-xl font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2 homepage-text">
-              <li>incoming @
+              <li>software engineer intern @
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://cibccm.com/en/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">CIBC</Link>
                   <Link href="https://cibccm.com/en/" target="_blank" className="ml-1">
@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
                 (summer 2026)
               </li> 
-              <li>software engineer intern @ 
+              <li>prev. @
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
                   <Link href="https://acto.com/" target="_blank" className="ml-1">

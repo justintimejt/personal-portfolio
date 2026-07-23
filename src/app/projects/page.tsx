@@ -121,7 +121,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white dotted-bg">
+    <div className="flex flex-col min-h-screen max-w-3xl mx-auto p-8 pb-20 gap-8 sm:p-20 bg-white dark:bg-black text-gray-900 dark:text-white">
       <nav className="flex justify-between w-full text-md">
         <div className="flex gap-6">
           <Link href="/" className="font-bold">Justin Chow</Link>

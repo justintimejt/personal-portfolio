@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Lora } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { Analytics } from "@vercel/analytics/next";
 
-const ebGaramond = EB_Garamond({ subsets: ["latin"] });
-const lora = Lora({ 
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-lora"
+  variable: "--font-geist-mono",
 });
 
 // In some dev environments Node starts with a stubbed global localStorage (no getItem).
@@ -51,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ebGaramond.className} ${lora.variable}`}>
+      <body className={`${geistMono.className} ${geistMono.variable}`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>
