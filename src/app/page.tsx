@@ -75,17 +75,21 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h1 className="text-xl font-semibold">&lt; what I&apos;m building currently &gt;</h1>
-            <div className="flex justify-center pt-4">
-              <Link href="https://x.com/justinpchow/status/1984471220189069774/photo/1" target="_blank">
-                <Image 
-                  src="/images/canvaschathome.jpeg" 
-                  alt="canvas chat hehe" 
-                  width={500} 
-                  height={300}
-                  className="rounded-lg"
+            <div className="flex flex-col pt-4 gap-3">
+              <Link href="https://www.aarchi.tech/" target="_blank">
+                <video
+                  src="/videos/architech-demo.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full"
                 />
               </Link>
+              <div>
+                <h2 className="text-lg font-semibold">Architech - Visualize System Architecture</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Hack Western 2025</p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { Analytics } from "@vercel/analytics/next";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
+});
 
 const geistMono = Geist_Mono({
   subsets: ["latin"],
@@ -49,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.className} ${geistMono.variable}`}>
+      <body className={`${geistMono.className} ${geist.variable} ${geistMono.variable}`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>
