@@ -14,6 +14,13 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+html,
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  min-height: 100%;
+}
+
 .homepage-text {
   font-weight: 300;
   font-style: normal;
