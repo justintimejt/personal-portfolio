@@ -34,7 +34,15 @@ export default function Home() {
           <div className="space-y-4">
             <h1 className="text-xl font-semibold">&lt; about &gt;</h1>
             <ul className="list-disc pl-6 mt-2 space-y-2 homepage-text">
-              <li>software engineer intern @
+            <li>Computer Science student at 
+                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Link href="https://www.uwo.ca/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">Western University</Link>
+                  <Link href="https://www.uwo.ca/" target="_blank" className="ml-1">
+                    <Image src="/images/westernlogo.png" alt="Western logo" width={20} height={20} className="inline" />
+                  </Link>
+                </div>
+              </li>
+              <li>prev. software engineer intern @
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://cibccm.com/en/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">CIBC</Link>
                   <Link href="https://cibccm.com/en/" target="_blank" className="ml-1">
@@ -43,7 +51,7 @@ export default function Home() {
                 </div>
                 (summer 2026)
               </li> 
-              <li>prev. @
+              <li>prev. software engineer intern @
                 <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <Link href="https://acto.com/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">ACTO</Link>
                   <Link href="https://acto.com/" target="_blank" className="ml-1">
@@ -52,15 +60,7 @@ export default function Home() {
                 </div>
                 (summer 2025)
               </li> 
-              <li>Computer Science student at 
-                <div className="inline-flex items-center ml-1 px-2 py-1 rounded-md bg-gray-300 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                  <Link href="https://www.uwo.ca/" target="_blank" className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-300">Western University</Link>
-                  <Link href="https://www.uwo.ca/" target="_blank" className="ml-1">
-                    <Image src="/images/westernlogo.png" alt="Western logo" width={20} height={20} className="inline" />
-                  </Link>
-                </div>
-              </li>
-              <li>prev: software engineer intern @ UNITEC Engineering (summer 2024)</li>
+              <li>currently exploring distrbuted systems + system design</li>
             </ul>
           </div>
           <div className="space-y-3">
