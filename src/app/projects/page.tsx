@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaExternalLinkAlt, FaMoon, FaSun } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMoon, FaSun } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { useTheme } from "../context/ThemeContext";
 
 interface ProjectCardProps {
@@ -155,7 +156,7 @@ export default function Projects() {
           <div className="flex gap-6">
             <Link href="https://github.com/justintimejt" target="_blank"><FaGithub className="w-5 h-5" /></Link>
             <Link href="https://www.linkedin.com/in/justin-chow-a74a972b5/" target="_blank"><FaLinkedin className="w-5 h-5" /></Link>
-            <Link href="https://x.com/justinpchow" target="_blank"><FaTwitter className="w-5 h-5" /></Link>
+            <Link href="https://x.com/justinpchow" target="_blank"><FaXTwitter className="w-5 h-5" /></Link>
             <Link href="mailto:jchow267@uwo.ca" target="_blank"><FaEnvelope className="w-5 h-5" /></Link>
           </div>
           <div className="text-sm text-gray-500 dark:text-gray-400">
