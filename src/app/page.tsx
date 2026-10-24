@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
                 (summer 2025)
               </li> 
-              <li>currently exploring distrbuted systems + system design</li>
+              <li>currently exploring distributed systems + system design</li>
             </ul>
           </div>
           <div className="space-y-3">
